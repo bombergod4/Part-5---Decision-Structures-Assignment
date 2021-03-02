@@ -26,7 +26,7 @@ namespace Part_5___Decision_Structures_Assignment
                 else 
                     Console.WriteLine("Teen");
             else
-                Console.WriteLine("Enter a numeric value");
+                Console.WriteLine("User error: non-number used");
             Console.WriteLine("");
             Console.WriteLine("Hurricane");
             Console.WriteLine("Please enter a number between 1 and 5");
@@ -50,7 +50,7 @@ namespace Part_5___Decision_Structures_Assignment
                         break;
                 }
             else
-                Console.WriteLine("Please enter a numeric value between 1 and 5");
+                Console.WriteLine("User error: proper number not found.");
             Console.WriteLine("");
             Console.WriteLine("Random Divisible");
             randomInt = generator.Next(2, 7);
@@ -62,9 +62,9 @@ namespace Part_5___Decision_Structures_Assignment
                     else
                         Console.WriteLine("Not Divisible");
                 else
-                    Console.WriteLine("Enter a number greater than the divisor");
+                    Console.WriteLine("Error: number Smaller than the divisor");
             else
-                Console.WriteLine("Enter a number");
+                Console.WriteLine("Error: Non Numeric value used");
 
         }
     }
