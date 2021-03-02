@@ -12,6 +12,7 @@ namespace Part_5___Decision_Structures_Assignment
         {
             int age, hurricane, randomInt, chosenInt;
             Random generator = new Random();
+            Console.WriteLine("Stages");
             Console.WriteLine("Please enter your age");
             if (Int32.TryParse(Console.ReadLine(), out age) == true)
                 if (age >= 18)
@@ -26,6 +27,8 @@ namespace Part_5___Decision_Structures_Assignment
                     Console.WriteLine("Teen");
             else
                 Console.WriteLine("Enter a numeric value");
+            Console.WriteLine("");
+            Console.WriteLine("Hurricane");
             Console.WriteLine("Please enter a number between 1 and 5");
             if (Int32.TryParse(Console.ReadLine(), out hurricane) == true)
                 switch (hurricane)
@@ -48,6 +51,8 @@ namespace Part_5___Decision_Structures_Assignment
                 }
             else
                 Console.WriteLine("Please enter a numeric value between 1 and 5");
+            Console.WriteLine("");
+            Console.WriteLine("Random Divisible");
             randomInt = generator.Next(2, 7);
             Console.WriteLine("Please enter a number larger than " + randomInt);
             if (Int32.TryParse(Console.ReadLine(), out chosenInt) == true)
