@@ -18,7 +18,7 @@ namespace Part_5___Decision_Structures_Assignment
                 if (age >= 18)
                     Console.WriteLine("Adult");
                 else if (age < 0)
-                    Console.WriteLine("Please enter a positive value");
+                    Console.WriteLine("Error: Negative value entered");
                 else if (age <= 5)
                     Console.WriteLine("Toddler");
                 else if (age <= 10)
@@ -47,6 +47,9 @@ namespace Part_5___Decision_Structures_Assignment
                         break;
                     case 5:
                         Console.WriteLine("The speed of a category 5 hurricane is 250 or more KM per hour");
+                        break;
+                    default:
+                        Console.WriteLine("Error: Number not acceptable");
                         break;
                 }
             else
